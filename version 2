@@ -1,0 +1,137 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPNb9LbczhuoeUHtJPeA6xd",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ratking404/Ai-class-project/blob/main/version%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Smart Rule-Based Course Assistant Bot (With Politeness)\n",
+        "\n",
+        "def course_assistant_bot():\n",
+        "    print(\"Hello! I am your AI Course Assistant. How can I help you today?\")\n",
+        "    print(\"You can ask about: course schedule, assignments, professors, AI topics, or resources.\\n\")\n",
+        "\n",
+        "    while True:\n",
+        "        user_input = input(\"You: \").lower()\n",
+        "\n",
+        "        # Polite responses\n",
+        "        if any(word in user_input for word in [\"thank\", \"thanks\"]):\n",
+        "            print(\"Bot: You're welcome! Happy to help 😊\")\n",
+        "\n",
+        "        elif \"sorry\" in user_input:\n",
+        "            print(\"Bot: No worries at all! Feel free to ask anything.\")\n",
+        "\n",
+        "        # Intent 1: Course Schedule\n",
+        "        elif any(word in user_input for word in [\"schedule\", \"time\", \"class\", \"when\"]):\n",
+        "            print(\"Bot: Here's the course schedule:\")\n",
+        "            print(\" - Tuesday: Introduction to AI and Cybersecurity\")\n",
+        "            print(\" - Wednesday: Research Methods\")\n",
+        "            print(\" - Thursday: Programming for AI\")\n",
+        "            print(\" - Friday: Cryptography\")\n",
+        "\n",
+        "        # Intent 2: Assignments\n",
+        "        elif any(word in user_input for word in [\"assignment\", \"homework\", \"due\", \"tasks\", \"projects\"]):\n",
+        "            print(\"Bot: Programming for AI has three projects:\")\n",
+        "            print(\" 1. Data Analysis\")\n",
+        "            print(\" 2. Chat Bot\")\n",
+        "            print(\" 3. Machine Learning\")\n",
+        "\n",
+        "        # Intent 3: Professor Info\n",
+        "        elif any(word in user_input for word in [\"professor\", \"instructor\", \"teacher\", \"who\"]):\n",
+        "            print(\"Bot: Here are the professors for each course:\")\n",
+        "            print(\" - Introduction to AI: Madam Hinga\")\n",
+        "            print(\" - Cybersecurity: Mr. Rogers\")\n",
+        "            print(\" - Research Methods: Mr. Jerud\")\n",
+        "            print(\" - Programming for AI: Madam Hinga\")\n",
+        "            print(\" - Cryptography: Mr. Rogers\")\n",
+        "\n",
+        "        # Intent 4: AI Topics\n",
+        "        elif any(word in user_input for word in [\"topic\", \"ai topic\", \"machine learning\", \"subject\", \"content\"]):\n",
+        "            print(\"Bot: Currently, we are covering Machine Learning basics, including supervised and unsupervised learning.\")\n",
+        "\n",
+        "        # Intent 5: Resources\n",
+        "        elif any(word in user_input for word in [\"resources\", \"books\", \"materials\", \"tutorials\", \"references\"]):\n",
+        "            print(\"Bot: Recommended resources include 'Artificial Intelligence: A Modern Approach' by Russell & Norvig and online tutorials on Coursera.\")\n",
+        "\n",
+        "        # Exit\n",
+        "        elif any(word in user_input for word in [\"exit\", \"bye\", \"quit\", \"goodbye\"]):\n",
+        "            print(\"Bot: Thank you for chatting! Have a great day! 👋\")\n",
+        "            break\n",
+        "\n",
+        "        # Unknown input\n",
+        "        else:\n",
+        "            print(\"Bot: I'm sorry, I didn't understand that. Could you please rephrase your question?\")\n",
+        "\n",
+        "# Run the bot\n",
+        "course_assistant_bot()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xpEFug2rf3vz",
+        "outputId": "2efe1965-1aed-4372-8273-0a12cfbf2e3c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello! I am your AI Course Assistant. How can I help you today?\n",
+            "You can ask about: course schedule, assignments, professors, AI topics, or resources.\n",
+            "\n",
+            "You: assingments\n",
+            "Bot: I'm sorry, I didn't understand that. Could you please rephrase your question?\n",
+            "You: what assigment is there\n",
+            "Bot: I'm sorry, I didn't understand that. Could you please rephrase your question?\n",
+            "You: course schedule\n",
+            "Bot: Here's the course schedule:\n",
+            " - Tuesday: Introduction to AI and Cybersecurity\n",
+            " - Wednesday: Research Methods\n",
+            " - Thursday: Programming for AI\n",
+            " - Friday: Cryptography\n",
+            "You: assignments\n",
+            "Bot: Programming for AI has three projects:\n",
+            " 1. Data Analysis\n",
+            " 2. Chat Bot\n",
+            " 3. Machine Learning\n",
+            "You: professors\n",
+            "Bot: Here are the professors for each course:\n",
+            " - Introduction to AI: Madam Hinga\n",
+            " - Cybersecurity: Mr. Rogers\n",
+            " - Research Methods: Mr. Jerud\n",
+            " - Programming for AI: Madam Hinga\n",
+            " - Cryptography: Mr. Rogers\n",
+            "You: topics\n",
+            "Bot: Currently, we are covering Machine Learning basics, including supervised and unsupervised learning.\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
