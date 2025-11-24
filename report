@@ -1,0 +1,82 @@
+Course Assistant Bot – Project Report
+
+Project Title: Course Assistant Bot (Rule-Based AI Chatbot)
+Name: [Your Name]
+Registration Number: [Your Registration Number]
+
+1. Problem Statement and Objective
+
+Problem Statement:
+Many students struggle to quickly access information about their courses, such as schedules, assignments, professors, and learning resources. This can lead to missed deadlines, confusion, and reduced productivity. There is a need for a simple, accessible tool that can assist students in finding course-related information efficiently.
+
+Objective:
+The objective of this project is to build a rule-based chatbot that can:
+
+Provide course schedules and class timings.
+
+List assignments and projects.
+
+Give information about professors for each course.
+
+Share AI topics currently being studied.
+
+Recommend resources such as books and online tutorials.
+
+Respond politely to general interactions, creating a friendly user experience.
+
+2. Code Description and Libraries Used
+
+Code Description:
+The Course Assistant Bot is implemented in Python using if–else logic and keyword matching. The bot reads user input from the terminal and responds according to predefined rules. Key features include:
+
+Handling 5 main user intents: course schedule, assignments, professor info, AI topics, and resources.
+
+Polite responses to “thanks” and “sorry.”
+
+Exit functionality with keywords like “exit,” “bye,” or “quit.”
+
+Libraries Used:
+
+Python 3.x (no external libraries required)
+
+How it Works:
+
+The bot runs in a loop, continuously asking for user input.
+
+Each input is converted to lowercase for consistent matching.
+
+Keyword matching identifies the user intent.
+
+Appropriate responses are displayed for each recognized intent.
+
+If the input is not recognized, the bot politely asks the user to rephrase.
+
+3. Reflection
+
+What I Learned:
+
+How to implement a simple rule-based chatbot using Python.
+
+Understanding of keyword-based intent recognition.
+
+Importance of politeness and user experience in chatbot design.
+
+Structuring code in a readable and maintainable way.
+
+Challenges:
+
+Ensuring the bot could handle multiple variations of user input.
+
+Designing polite and informative responses that cover all scenarios.
+
+Managing course and assignment information efficiently in a simple structure.
+
+Improvements for the Future:
+
+Implementing a context-aware bot that remembers past user queries.
+
+Adding more intents and support for natural language variations.
+
+Integrating GUI or web interface for easier use.
+
+Using machine learning/NLP for smarter understanding of user input.
